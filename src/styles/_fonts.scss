@@ -1,6 +1,17 @@
 @font-face {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-  src: url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+  font-family: BebasNeue;
+  src:
+    local('BebasNeue'),
+    url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Manrope;
+  src:
+    local('Manrope'),
+    url('../fonts/Manrope-VariableFont_wght.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }

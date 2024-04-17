@@ -1,7 +1,11 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import './utils/mixins';
+@import './blocks/container';
+@import './blocks/grid';
+@import './blocks/text';
+@import './blocks/nav';
+@import './blocks/images';
 
-body {
-  background: $c-gray;
-}
+

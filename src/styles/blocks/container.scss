@@ -1,0 +1,14 @@
+.container {
+  max-width: 1440px;
+  position: relative;
+  padding: 0 135px;
+
+  @include tablet {
+    padding: 0 34px;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+
+}
