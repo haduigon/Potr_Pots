@@ -29,7 +29,7 @@
 .blue-slogan-box {
   width: 470px;
   color: #03839e;
-  -webkit-text-fill-color: rgba(0,0,0,0);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #03839e;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 64px;
@@ -42,4 +42,24 @@
 
 .blue-fill {
   -webkit-text-fill-color: #03839e;
+}
+
+.hfit {
+  transform: translateY(-900%);
+  color: #333;
+  font-family: Manrope, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price {
+  transform: translateY(-700%);
+  color: #4f4f4f;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
 }
