@@ -27,7 +27,7 @@
 }
 
 .blue-slogan-box {
-  width: 460px;
+  width: 480px;
   color: #03839e;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #03839e;
@@ -51,9 +51,9 @@
 
 .hfit {
   width: fit-content;
-  transform: translateY(-1000%);
+  transform: translateY(-700%);
   color: #333;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -65,16 +65,16 @@
 }
 
 .price {
-  transform: translateY(-1800%);
+  transform: translateY(-650%);
   color: #4f4f4f;
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
 
   @include tablet {
-    transform: translateY(-1800%);
+    transform: translateY(-880%);
   }
   
 }
