@@ -1,10 +1,21 @@
 .top-pic {
   display: flex;
+  width: 100%;
   justify-content: end;
 
   @include tablet {
     width: 306px;
     height: 306px;
-    transform: translateX(0);
   }
 }
+
+.top-pic-box {
+
+  @include tablet {
+    transform: translateY(-90%);
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+}
+

@@ -13,7 +13,7 @@
 .header-bebas-box {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 180px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .blue-slogan-box {
-  width: 470px;
+  width: 460px;
   color: #03839e;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #03839e;
@@ -38,6 +38,11 @@
   line-height: 64px; /* 100% */
   letter-spacing: 9.92px;
   text-transform: uppercase;
+
+  @include tablet {
+    position: relative;
+    z-index: 1000;
+  }
 }
 
 .blue-fill {
@@ -45,21 +50,42 @@
 }
 
 .hfit {
-  transform: translateY(-900%);
+  width: fit-content;
+  transform: translateY(-1000%);
   color: #333;
-  font-family: Manrope, sans-serif;
+  font-family: Manrope;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @include tablet {
+    transform: translateY(-1000%);
+  }
 }
 
 .price {
-  transform: translateY(-700%);
+  transform: translateY(-1800%);
   color: #4f4f4f;
-  font-family: Manrope, sans-serif;
+  font-family: Manrope;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
+
+  @include tablet {
+    transform: translateY(-1800%);
+  }
+  
+}
+
+.ft {
+  width: fit-content;
+}
+
+.new-line {
+  @include tablet {
+    width: 140px;
+    
+  }
 }
