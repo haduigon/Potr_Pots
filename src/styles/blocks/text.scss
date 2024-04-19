@@ -60,6 +60,7 @@
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    transform: translateY(90%);
   }
 }
 
@@ -93,7 +94,7 @@
   }
 
   @include mobile {
-    transform: translateY(0);
+    transform: translateY(1000%);
   }
 }
 
@@ -111,12 +112,16 @@
   }
 
   @include mobile {
-    transform: translateY(0);
+    transform: translateY(850%);
   }
 }
 
 .ft {
   width: fit-content;
+
+  @include mobile {
+    transform: translateY(100%);
+  }
 }
 
 .new-line {
