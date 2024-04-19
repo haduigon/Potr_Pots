@@ -8,6 +8,11 @@
   color: #333;
   text-transform: uppercase;
   margin: 0;
+
+  @include mobile {
+    width: fit-content;
+    padding-right: 0;
+  }
 }
 
 .header-bebas-box {
@@ -29,9 +34,9 @@
 .blue-slogan-box {
   width: 480px;
   color: #03839e;
+  font-family: BebasNeue, sans-serif;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   -webkit-text-stroke: 1px #03839e;
-  font-family: 'Bebas Neue', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
@@ -43,10 +48,34 @@
     position: relative;
     z-index: 1000;
   }
+
+  @include mobile {
+    width: 100%;
+    letter-spacing: 5.58px;
+    -webkit-text-stroke-width: 0.68;
+    -webkit-text-stroke-color: #03839e;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 }
 
 .blue-fill {
   -webkit-text-fill-color: #03839e;
+
+  @include mobile {
+    color: var(--turquoise, #03839e);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5.58px;
+    text-transform: uppercase;
+  }
 }
 
 .hfit {
@@ -62,6 +91,10 @@
   @include tablet {
     transform: translateY(-1000%);
   }
+
+  @include mobile {
+    transform: translateY(0);
+  }
 }
 
 .price {
@@ -76,7 +109,10 @@
   @include tablet {
     transform: translateY(-880%);
   }
-  
+
+  @include mobile {
+    transform: translateY(0);
+  }
 }
 
 .ft {
@@ -86,6 +122,5 @@
 .new-line {
   @include tablet {
     width: 140px;
-    
   }
 }

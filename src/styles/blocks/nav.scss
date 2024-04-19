@@ -8,6 +8,10 @@
   height: fit-content;
   margin-top: 20px;
   margin-bottom: 90px;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
 }
 
 .yellow {
@@ -36,6 +40,10 @@
 
 .pr-260 {
   padding-right: 260px;
+
+  @include mobile {
+    padding-right: 0;
+  }
 }
 
 .features {

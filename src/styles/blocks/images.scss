@@ -4,17 +4,47 @@
   justify-content: end;
 
   @include tablet {
-    width: 306px;
-    height: 306px;
+    transform: translateY(-90%);
   }
+
+  @include mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    transform: translateX(-3%);
+  }
+
 }
 
-.top-pic-box {
-  @include tablet {
-    transform: translateY(-90%);
-    display: flex;
-    width: 100%;
-    justify-content: end;
+.cactus-background {
+  @include desktop {
+    background-image: url("../images/SMall.png");
+    background-size: cover;
+    width: 90%;
+    height: 0;
+    padding-top: 90%;
+    background-repeat: no-repeat;
   }
+
+  @include tablet {
+    background-image: url("../images/SMall.png");
+    background-size: cover;
+    width: 90%;
+    height: 0;
+    padding-top: 90%;
+    background-repeat: no-repeat;
+  }
+
+  @include mobile {
+    position: absolute;
+    left: 0;
+    background-image: url("../images/SMall.png");
+    background-size: cover;
+    width: 103%;
+    height: 0;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+  }
+
 }
 
