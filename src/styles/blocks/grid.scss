@@ -15,7 +15,8 @@
   }
 
   @include mobile {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   &__item {
