@@ -1,0 +1,36 @@
+.yellow-button-big-box {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 50px;
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.yellow-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe339;
+  width: 50%;
+
+  @include mobile {
+    width: 100%;
+  }
+
+}
+
+.yellow-button-text {
+  padding: 14px 0;
+  color: #121212;
+  font-family: Manrope, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  padding-right: 24px;
+
+}
