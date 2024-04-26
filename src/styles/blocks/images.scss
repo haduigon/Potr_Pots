@@ -20,6 +20,10 @@
     display: block;
     position: relative;
   }
+
+  &--start {
+    justify-content: start;
+  }
 }
 
 .cactus-background {
@@ -56,5 +60,34 @@
     display: block;
     height: max-content;
     margin-bottom: 25px;
+  }
+}
+
+.second-pic-background {
+  @include desktop {
+    background-image: url('../images/secondImage.png');
+    background-size: cover;
+    width: 44%;
+    height: 0;
+    padding-top: 44%;
+    background-repeat: no-repeat;
+  }
+
+  @include tablet {
+    background-image: url('../images/secondImage.png');
+    background-size: cover;
+    width: 40vw;
+    height: 0;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+  }
+
+  @include mobile {
+    background-image: url('../images/secondImage.png');
+    background-size: cover;
+    width: 100vw;
+    height: 0;
+    padding-top: 100vw;
+    background-repeat: no-repeat;
   }
 }
