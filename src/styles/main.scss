@@ -14,3 +14,31 @@ body {
   height: 100%;
   margin: 0;
 }
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mobile-mb-0 {
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-mb-30 {
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}

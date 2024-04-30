@@ -13,7 +13,7 @@
   @include tablet {
     position: absolute;
     right: 34px;
-    max-width: 306px;
+    max-width: 90%;
   }
 
   @include mobile {
@@ -23,6 +23,10 @@
 
   &--start {
     justify-content: start;
+
+    @include tablet {
+      max-width: 90%;
+    }
   }
 }
 
@@ -67,9 +71,9 @@
   @include desktop {
     background-image: url('../images/secondImage.png');
     background-size: cover;
-    width: 44%;
+    width: 90%;
     height: 0;
-    padding-top: 44%;
+    padding-top: 90%;
     background-repeat: no-repeat;
   }
 
@@ -89,5 +93,11 @@
     height: 0;
     padding-top: 100vw;
     background-repeat: no-repeat;
+  }
+}
+
+.invisible {
+  @include mobile {
+    display: none;
   }
 }

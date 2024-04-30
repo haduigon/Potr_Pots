@@ -14,12 +14,6 @@
     justify-content: end;
   }
 
-  @include mobile {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0;
-  }
-
   &__item {
     @for $start from 1 through 6 {
       @for $end from $start through 6 {
@@ -47,5 +41,13 @@
   @include mobile {
     display: block;
     width: 100%;
+  }
+}
+
+.mob-flex {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
   }
 }
