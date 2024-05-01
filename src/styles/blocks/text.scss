@@ -214,8 +214,10 @@
 }
 
 .star {
-  display: flex;
-  justify-content: end;
+  // display: flex;
+  // justify-content: end;
+  position: absolute;
+  left: -30px;
   color: #000;
   font-family: Manrope, sans-serif;
   font-size: 24px;
@@ -232,6 +234,10 @@
 
 .slash-number {
   display: flex;
+
+  @include tablet {
+    // position: absolute;
+  }
 }
 
 .slash-text {
@@ -303,17 +309,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include tablet {
+    position: relative;
+  }
 }
 
 .slash-one {
-  @include tablet {
-    position: absolute;
-    left: 45%;
-    top: 32%;
-  }
-
   @include mobile {
     position: relative;
     left: 0;
   }
+}
+
+.robust-box {
+  height: fit-content;
+  position: relative;
+}
+
+.slash-total {
+  @include tablet {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+  }
+
+  @include mobile {
+    position: static;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.rel {
+  position: relative;
 }
