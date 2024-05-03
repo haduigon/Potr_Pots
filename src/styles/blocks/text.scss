@@ -331,7 +331,9 @@
   @include tablet {
     position: absolute;
     top: 15%;
-    left: 43%;
+    left: 63%;
+    // grid-area: 3/5;
+    // z-index: 100;
   }
 
   @include mobile {
@@ -343,4 +345,38 @@
 
 .rel {
   position: relative;
+}
+
+.new-grid {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+}
+
+.grid-cactus {
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  @include tablet {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    justify-self: end;
+  }
+}
+
+.grid-cactus-text {
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  @include tablet {
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+  }
 }

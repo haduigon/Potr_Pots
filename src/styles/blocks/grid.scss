@@ -51,3 +51,27 @@
     gap: 0;
   }
 }
+
+.new-grid {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+
+  @include tablet {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    // justify-content: end;
+  }
+}
+
+.grid-cactus {
+  grid-column-start: 2;
+  grid-column-end: 5;
+
+  @include tablet {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    justify-self: end;
+  }
+}
