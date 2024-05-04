@@ -214,8 +214,6 @@
 }
 
 .star {
-  // display: flex;
-  // justify-content: end;
   position: absolute;
   left: -30px;
   color: #000;
@@ -234,10 +232,17 @@
 
 .slash-number {
   display: flex;
+  position: relative;
+}
+.slash-number-two {
 
-  @include tablet {
-    // position: absolute;
-  }
+  position: absolute;
+
+  right: 40%;
+  bottom: 10%;
+
+  width: fit-content;
+
 }
 
 .slash-text {
@@ -253,17 +258,26 @@
   line-height: 180%;
 }
 
+.slash-text::before {
+  content: url('../images/slash2.svg');
+  display: inline;
+  position: absolute;
+  top: 0%;
+  right: 100%;
+  width: fit-content;
+} 
+
 .slash {
-  background-color: #333;
-  width: 1px;
-  height: 46px;
-  transform-origin: bottom left;
-  transform: rotate(22deg);
+  // background-color: #333;
+  // width: 1px;
+  // height: 46px;
+  // transform-origin: bottom left;
+  // transform: rotate(22deg);
 }
 
 .slash-box {
-  width: 20px;
-  height: 43px;
+  // width: 20px;
+  // height: 43px;
 }
 
 .robust {
@@ -285,6 +299,8 @@
   line-height: 150%; /* 54px */
   letter-spacing: 5.58px;
   text-transform: uppercase;
+  width: fit-content;
+  position: relative;
 
   @include mobile {
     order: 3;
@@ -330,10 +346,8 @@
 .slash-total {
   @include tablet {
     position: absolute;
-    top: 15%;
-    left: 63%;
-    // grid-area: 3/5;
-    // z-index: 100;
+    top: 11%;
+    left: 90%;
   }
 
   @include mobile {
@@ -351,6 +365,7 @@
   display: grid;
   max-width: 1440px;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   gap: 30px;
 
   @include tablet {
@@ -367,6 +382,7 @@
     grid-column-start: 4;
     grid-column-end: 7;
     justify-self: end;
+    grid-row-start: 1;
   }
 }
 
@@ -377,6 +393,23 @@
   @include tablet {
     grid-column-start: 3;
     grid-column-end: 3;
-
+    grid-row-start: 1;
+    justify-self: end;
   }
+}
+
+.text-slash-box {
+  float: right;
+  width: 470px;
+
+  @include tablet {
+    width: 340px;
+  }
+}
+
+.text-slash-box::after {
+  content: url('../images/slash2.svg');
+  display: inline;
+  position: absolute;
+  width: fit-content;
 }
