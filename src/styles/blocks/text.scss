@@ -233,6 +233,7 @@
 .slash-number {
   display: flex;
   position: relative;
+  // padding-left: 100%;
 }
 .slash-number-two {
 
@@ -265,7 +266,8 @@
   top: 0%;
   right: 100%;
   width: fit-content;
-} 
+  // padding-left: 100%;
+}
 
 .slash {
   // background-color: #333;

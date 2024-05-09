@@ -69,10 +69,19 @@
 .grid-cactus {
   grid-column-start: 2;
   grid-column-end: 5;
+  // align-items: center;
+  // justify-content: center;
+  align-self: center;
 
   @include tablet {
     grid-column-start: 4;
     grid-column-end: 7;
     justify-self: end;
   }
+}
+
+.new-grid-item {
+  grid-column-start: 8;
+  grid-column-end: 13;
+  grid-row: 1;
 }
