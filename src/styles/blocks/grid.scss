@@ -55,9 +55,10 @@
 .new-grid {
   display: grid;
   max-width: 1440px;
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
+  row-gap: 0;
 
   @include tablet {
     grid-template-columns: repeat(6, 1fr);
@@ -69,8 +70,7 @@
 .grid-cactus {
   grid-column-start: 2;
   grid-column-end: 5;
-  // align-items: center;
-  // justify-content: center;
+  grid-row: 1;
   align-self: center;
 
   @include tablet {
@@ -83,5 +83,20 @@
 .new-grid-item {
   grid-column-start: 8;
   grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.new-grid-item2 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  align-self: end;
+}
+
+.new-grid-item3 {
+  grid-column-start: 8;
+  grid-column-end: 12;
   grid-row: 1;
+  align-self: end;
 }

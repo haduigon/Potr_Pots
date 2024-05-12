@@ -237,12 +237,12 @@
 }
 .slash-number-two {
 
-  position: absolute;
+  // position: absolute;
 
-  right: 40%;
-  bottom: 10%;
+  // right: 40%;
+  // bottom: 10%;
 
-  width: fit-content;
+  // width: fit-content;
 
 }
 
@@ -363,30 +363,30 @@
   position: relative;
 }
 
-.new-grid {
-  display: grid;
-  max-width: 1440px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 30px;
+// .new-grid {
+//   display: grid;
+//   max-width: 1440px;
+//   grid-template-columns: repeat(12, 1fr);
+//   grid-template-rows: repeat(1, 1fr);
+//   gap: 30px;
 
-  @include tablet {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-  }
-}
+//   @include tablet {
+//     grid-template-columns: repeat(6, 1fr);
+//     gap: 20px;
+//   }
+// }
 
-.grid-cactus {
-  grid-column-start: 2;
-  grid-column-end: 5;
+// .grid-cactus {
+//   grid-column-start: 2;
+//   grid-column-end: 5;
 
-  @include tablet {
-    grid-column-start: 4;
-    grid-column-end: 7;
-    justify-self: end;
-    grid-row-start: 1;
-  }
-}
+//   @include tablet {
+//     grid-column-start: 4;
+//     grid-column-end: 7;
+//     justify-self: end;
+//     grid-row-start: 1;
+//   }
+// }
 
 .grid-cactus-text {
   grid-column-start: 2;
