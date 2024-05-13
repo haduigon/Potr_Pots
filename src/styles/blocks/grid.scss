@@ -72,6 +72,7 @@
   grid-column-end: 5;
   grid-row: 1;
   align-self: end;
+  height: 100%;
 
   @include tablet {
     grid-column-start: 4;

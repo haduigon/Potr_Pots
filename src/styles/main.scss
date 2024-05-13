@@ -66,3 +66,9 @@ body {
 .mt-40 {
   margin-top: 40px;
 }
+
+.justify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
