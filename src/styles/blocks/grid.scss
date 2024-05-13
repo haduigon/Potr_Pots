@@ -71,7 +71,7 @@
   grid-column-start: 2;
   grid-column-end: 5;
   grid-row: 1;
-  align-self: center;
+  align-self: end;
 
   @include tablet {
     grid-column-start: 4;
@@ -88,15 +88,17 @@
 }
 
 .new-grid-item2 {
+  // display: flex;
   grid-column-start: 2;
   grid-column-end: 5;
-  grid-row-start: 1;
-  align-self: end;
+  grid-row-start: 2;
+  // margin-bottom: 350px;
+  // align-self: end;
 }
 
 .new-grid-item3 {
   grid-column-start: 8;
   grid-column-end: 12;
-  grid-row: 1;
+  grid-row: 2;
   align-self: end;
 }
