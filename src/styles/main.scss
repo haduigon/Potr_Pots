@@ -49,6 +49,9 @@ body {
 
 .mb-80 {
   margin-bottom: 80px;
+  @include mobile {
+    margin-bottom: 70px;
+  }
 }
 
 .pt-100 {
@@ -71,4 +74,42 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.end {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  @include mobile {
+    display: none;
+  }
+  // align-self: end;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.desktop-mt-40 {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}
+
+.flex-top {
+  @include tablet {
+    position: relative;
+  }
+}
+
+.mmb-80 {
+  @include mobile {
+    margin-bottom: 70px;
+  }
 }
